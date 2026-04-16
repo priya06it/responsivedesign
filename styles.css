@@ -1,0 +1,105 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #0d1117;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+.navbar nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #0d1117, #1f2937);
+  color: white;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.about, .skills, .projects, .contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  background: #f3f4f6;
+  margin: 10px;
+  padding: 15px 25px;
+  border-radius: 20px;
+}
+
+.projects {
+  background: #f9fafb;
+}
+
+.project-card {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 400px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+footer {
+  background: #0d1117;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ================= Responsive ================= */
+
+@media (max-width: 768px) {
+  .navbar nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #0d1117;
+    width: 200px;
+  }
+
+  .navbar nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
