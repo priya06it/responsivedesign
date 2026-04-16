@@ -36,6 +36,6 @@
 
 ## 📫 Contact Me
 
-* Email: priya06it@gmail.com](mailto:priya06it@gmail.com)
+* Email: priya06it@gmail.com (mailto:priya06it@gmail.com)
 
 ---
