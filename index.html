@@ -3,105 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Flexbox Practice</title>
+  <title>CSS Positioning Practice</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>CSS Flexbox Practice</h1>
+
+<header class="sticky-header">Sticky Header</header>
+
+<main>
+  <h1>CSS Positioning Practice</h1>
 
   <section>
-    <h2>1. Basic Row Layout</h2>
-    <div class="flex row-demo">
-      <div class="box">1</div>
-      <div class="box">2</div>
-      <div class="box">3</div>
+    <h2>1. Static Position</h2>
+    <div class="demo-box">Static is the default position.</div>
+  </section>
+
+  <section>
+    <h2>2. Relative Position</h2>
+    <div class="demo-box relative-box">Moved using top and left.</div>
+  </section>
+
+  <section>
+    <h2>3. Absolute Badge</h2>
+    <div class="card">
+      <span class="badge">3</span>
+      Notification Card
     </div>
   </section>
 
   <section>
-    <h2>2. Column Layout</h2>
-    <div class="flex column-demo">
-      <div class="box">A</div>
-      <div class="box">B</div>
-      <div class="box">C</div>
-    </div>
+    <h2>4. Fixed Chat Button</h2>
+    <p>Scroll to see the chat button stay at the bottom-right corner.</p>
   </section>
 
   <section>
-    <h2>3. justify-content: space-between</h2>
-    <div class="flex justify-demo">
-      <div class="box">Left</div>
-      <div class="box">Center</div>
-      <div class="box">Right</div>
-    </div>
+    <h2>5. Sticky Header</h2>
+    <p>The header at the top sticks when you scroll.</p>
   </section>
 
   <section>
-    <h2>4. align-items: center</h2>
-    <div class="flex align-demo">
-      <div class="box small">Small</div>
-      <div class="box large">Large</div>
-      <div class="box small">Small</div>
+    <h2>6. z-index Demo</h2>
+    <div class="z-index-demo">
+      <div class="box red-box">1</div>
+      <div class="box blue-box">2</div>
     </div>
   </section>
 
-  <section>
-    <h2>5. flex-wrap</h2>
-    <div class="flex wrap-demo">
-      <div class="box">1</div>
-      <div class="box">2</div>
-      <div class="box">3</div>
-      <div class="box">4</div>
-      <div class="box">5</div>
-      <div class="box">6</div>
-    </div>
+  <section class="spacer">
+    <p>Extra content to enable scrolling.</p>
   </section>
+</main>
 
-  <section>
-    <h2>6. flex: 1</h2>
-    <div class="flex flex-grow-demo">
-      <div class="box flex-1">Menu</div>
-      <div class="box flex-2">Content</div>
-      <div class="box flex-1">Ads</div>
-    </div>
-  </section>
+<button class="chat-button">💬</button>
 
-  <section>
-    <h2>7. align-self</h2>
-    <div class="flex align-self-demo">
-      <div class="box">1</div>
-      <div class="box self-end">2</div>
-      <div class="box">3</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>8. order</h2>
-    <div class="flex order-demo">
-      <div class="box order-3">First in HTML</div>
-      <div class="box order-1">Second in HTML</div>
-      <div class="box order-2">Third in HTML</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>9. Perfect Centering</h2>
-    <div class="center-demo">
-      <div class="box">Centered</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>10. Responsive Navbar</h2>
-    <nav class="navbar">
-      <div class="logo">MyLogo</div>
-      <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-      </div>
-    </nav>
-  </section>
 </body>
 </html>
